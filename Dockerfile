@@ -5,6 +5,6 @@ WORKDIR /deploy
 RUN apk add make bash
 RUN npm install -g serverless
 
-ADD entrypoint.sh .
+ADD entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["/bin/bash", "/deploy/entrypoint.sh" ]
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh" ]
